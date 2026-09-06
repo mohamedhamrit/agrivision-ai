@@ -1,0 +1,126 @@
+{
+  "disease": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 200
+      },
+      "healthy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 200
+      },
+      "leaf_spot": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 200
+      },
+      "rust": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 200
+      }
+    },
+    "confusion": {
+      "blight": {
+        "blight": 200,
+        "healthy": 0,
+        "leaf_spot": 0,
+        "rust": 0
+      },
+      "healthy": {
+        "healthy": 200,
+        "blight": 0,
+        "leaf_spot": 0,
+        "rust": 0
+      },
+      "leaf_spot": {
+        "leaf_spot": 200,
+        "blight": 0,
+        "healthy": 0,
+        "rust": 0
+      },
+      "rust": {
+        "rust": 200,
+        "blight": 0,
+        "healthy": 0,
+        "leaf_spot": 0
+      }
+    },
+    "n": 800,
+    "confident_fraction": 0.99875
+  },
+  "severity": {
+    "overall_severity_agreement": 1.0,
+    "buckets": [
+      {
+        "expected_severity": "healthy",
+        "target_ratio": 0.0,
+        "agreement": 1.0,
+        "mean_error": 0.0,
+        "mae": 0.0,
+        "rmse": 0.0
+      },
+      {
+        "expected_severity": "mild",
+        "target_ratio": 0.07,
+        "agreement": 1.0,
+        "mean_error": 0.003963333333333326,
+        "mae": 0.004083333333333327,
+        "rmse": 0.004905337229318009
+      },
+      {
+        "expected_severity": "moderate",
+        "target_ratio": 0.4,
+        "agreement": 1.0,
+        "mean_error": 0.00859999999999997,
+        "mae": 0.00886666666666664,
+        "rmse": 0.010486117807209023
+      },
+      {
+        "expected_severity": "severe",
+        "target_ratio": 0.7,
+        "agreement": 1.0,
+        "mean_error": -0.005806666666666627,
+        "mae": 0.01173999999999998,
+        "rmse": 0.01484634635188063
+      }
+    ]
+  },
+  "latency": {
+    "overall_mean_ms_frame": 143.84839000413194,
+    "per_clip": [
+      {
+        "clip": "healthy",
+        "frames": 15,
+        "mean_ms_frame": 229.28589999986193,
+        "p95_ms_frame": 652.6525299996119
+      },
+      {
+        "clip": "mild",
+        "frames": 15,
+        "mean_ms_frame": 114.35207330311339,
+        "p95_ms_frame": 142.25032990798354
+      },
+      {
+        "clip": "moderate",
+        "frames": 15,
+        "mean_ms_frame": 118.70580002044638,
+        "p95_ms_frame": 135.32870002090928
+      },
+      {
+        "clip": "severe",
+        "frames": 15,
+        "mean_ms_frame": 113.0497866931061,
+        "p95_ms_frame": 123.13001004513353
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+# Extra deps only needed for the local web endpoint (agrivision/app.py).
+# Install with:  pip install -r agrivision/requirements-web.txt
+-r requirements.txt
+fastapi==0.115.0
+uvicorn==0.32.0
+httpx==0.28.1

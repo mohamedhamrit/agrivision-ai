@@ -1,0 +1,8 @@
+# Base runtime: OpenCV 5 pipeline + CNN classifier (used by the Lambda image).
+# Pinned for reproducibility. tensorflow 2.21.0 ships official aarch64
+# (Graviton/Arm64) CPU wheels on PyPI.
+# boto3 is omitted: it ships preinstalled in the AWS Lambda Python runtime and
+# is only imported lazily (agrivision/aws) for real backends.
+opencv-python==5.0.0
+numpy==2.5.1
+tensorflow==2.21.0
